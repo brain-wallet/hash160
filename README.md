@@ -86,7 +86,3 @@ We welcome contributions! Please feel free to submit a pull request with any imp
 ## License
 
 This project is released under [MIT License](LICENSE).
-
----
-
-Feel free to adjust paths, links, and descriptions according to your actual project details. If you have a LICENSE file, make sure to link it correctly in the License section. If not, you may specify the license type directly in the README.
