@@ -65,7 +65,7 @@ const hashResult = await hash160(data)
 
 ## Demo
 
-Check out the `main.html` file in the repository for a simple and interactive web demo illustrating the use of the `hash160` function. Simply input the text you'd like to hash, and see the Hash160 calculated in real-time. Try it [here](./main.html).
+Check out the `index.html` file in the repository for a simple and interactive web demo illustrating the use of the `hash160` function. Simply input the text you'd like to hash, and see the Hash160 calculated in real-time. Try it [here](https://brain-wallet.github.io/hash160/).
 
 ### Try it out:
 
