@@ -1,0 +1,28 @@
+{
+  "name": "hash160",
+  "version": "0.0.0",
+  "description": "hash160",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brain-wallet/hash160.git"
+  },
+  "keywords": [
+    "hash160"
+  ],
+  "author": "Melvin Carvalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brain-wallet/hash160/issues"
+  },
+  "homepage": "https://github.com/brain-wallet/hash160#readme",
+  "dependencies": {
+    "ripemd160": "^2.0.2",
+    "ripemd160-min": "^0.0.6",
+    "sha256": "^0.2.0"
+  }
+}
