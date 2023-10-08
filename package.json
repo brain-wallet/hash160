@@ -1,6 +1,6 @@
 {
   "name": "hash160",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "hash160",
   "main": "index.js",
   "scripts": {
