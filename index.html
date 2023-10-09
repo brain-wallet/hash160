@@ -72,6 +72,13 @@
       <h1>Hash160 Calculator</h1>
       <label for="dataInput">Enter data:</label>
       <input type="text" id="dataInput" oninput="calculateHash()" />
+
+      <!-- Checkbox for input type selection -->
+      <label>
+        <input type="checkbox" id="isHex" />
+        Hex
+      </label>
+
       <p id="output"></p>
     </div>
     <a
@@ -86,10 +93,28 @@
 
       window.calculateHash = async () => {
         const data = document.getElementById('dataInput').value
-        const hashResult = await hash160(data)
+        const isHex = document.getElementById('isHex').checked
+
+        // If input type is hex, validate the hex input and convert to Uint8Array
+        if (isHex && !/^[0-9a-fA-F]+$/.test(data)) {
+          document.getElementById('output').innerText = 'Invalid hex input'
+          return
+        }
+
+        const processedData = isHex ? hexToUint8Array(data) : data
+        const hashResult = await hash160(processedData) // Pass the processed data to your hash function
         document.getElementById(
           'output'
         ).innerText = `Hash160 of "${data}" is: ${hashResult}`
+      }
+
+      // Function to convert hex to Uint8Array
+      function hexToUint8Array(hexString) {
+        const byteArray = []
+        for (let i = 0; i < hexString.length; i += 2) {
+          byteArray.push(parseInt(hexString.slice(i, i + 2), 16))
+        }
+        return new Uint8Array(byteArray)
       }
     </script>
   </body>
