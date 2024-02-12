@@ -19,8 +19,6 @@
 [![npm](https://img.shields.io/npm/dw/hash160.svg)](https://npmjs.com/package/hash160)
 [![Github Stars](https://img.shields.io/github/stars/brain-wallet/hash160.svg)](https://github.com/brain-wallet/hash160/)
 
-Certainly! Below is a sample README.md file for your project:
-
 ---
 
 # Hash160 Calculator
